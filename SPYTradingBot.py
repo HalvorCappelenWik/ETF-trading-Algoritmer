@@ -4,6 +4,7 @@
 ## When the time has passed, the cycle starts again. 
 
 # region imports
+from datetime import timedelta
 from AlgorithmImports import *
 # endregion
 
@@ -27,7 +28,7 @@ class SPYTradingBot(QCAlgorithm):
 
         # Custome varables. 
         self.entryPrice = 0   # Track our entry price.           
-        self.period = timeDelta(31) # Period set to 31 days. 
+        self.period = timedelta(31) # Period set to 31 days. 
         self.nextEntryTime = self.Time # When we should reentry SPY position. 
 
 
