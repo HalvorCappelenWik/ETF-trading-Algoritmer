@@ -1,8 +1,3 @@
-## The idea behind this tradingbot is to buy and hold SPY (the ETF tracking the S&P500 idex)
-## The position will be closed as soon as I loose more than 10% or recieves a profit greater than 10%
-## After this the bot will stop investing for a pre determined period of time. 
-## When the time has passed, the cycle starts again. 
-
 # region imports
 from datetime import timedelta
 from AlgorithmImports import *
@@ -32,17 +27,7 @@ class SPYTradingBot(QCAlgorithm):
         self.nextEntryTime = self.Time # When we should reentry SPY position. 
 
 
-
-    # OnData method is called every time the end time of a bar is reached or when a tick event occurs 
-    # Basically every time the algorithm recieves new data. 
-    # Data parameter: Slice object, BaseData
-    # Helps us access the data in a good maner. 
-    # Ticks: LastPrice (raw and unfilered) (might contain bad ticks)
-    # TradeBars: Bar data covers a period of time. Passed on to the event handeler at its end time. Supports Equities, options and futures 
-    #            gives open, high, low, close and volume information. 
-    #            built by consolidation trades from exchanges  
-    # QuoteBars: Support all asset types. 
-    #            built by consolidation bid and ask prices from exchanges                 
+                 
     def OnData(self, data: Slice):
 
         # Check if requested data does exist 
