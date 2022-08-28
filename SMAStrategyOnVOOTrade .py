@@ -1,22 +1,3 @@
-# Use this scropt to learn how to use history requests, indicators and plotting. 
-
-# Theory 
-# History Requests:
-# We use history request to find early data about securities to be compared with our current data
-# 
-# Indicators:
-# 100+ pre-built indicators 
-# SMA, EMA, RSI, BollingerBands, Momentum, ATR, Stochastic, VWAP 
-
-# Strategy: 
-# Will trade VOO ETF
-# first try to identyfi if VOO is in an uptrend or downtrend 
-# To determine this we use simple movingaverage (SMA). Above SMA = uptrend, below SMA = downtrend
-# In addition we compare the current price to its 52-week high and low
-# If VOO uptrend + near high = buy (As much as possible) (below sma = sell)
-# If VOO downtrend + near low = sell   
-# All other cases = dont wont an active position. 
-
 from AlgorithmImports import *
 from datetime import *
 from collections import deque
