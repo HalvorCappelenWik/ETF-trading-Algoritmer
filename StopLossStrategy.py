@@ -1,7 +1,3 @@
-# Trading strategy:
-# We buy a stock or etf, then follow to create a trading stop loss order 5% below our price.
-# If stop loss is hit, exit our position and wait 1 month before entering the market again.  
-
 from curses import noecho
 from datetime import datetime
 from AlgorithmImports import *
