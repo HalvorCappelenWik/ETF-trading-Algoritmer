@@ -1,6 +1,6 @@
 # Algorithmic-Trading
 
-Resultatet er basert på backtesting fra 2020 - 2021. OBS not financial advice! Kun brukt for læring :)
+Resultatet er basert på backtesting fra 2020 - 2021. 
 
 SPY strategi:<br/>
 Veldig enkel strategi. Algoritmen vil umiddelbart foreta et et kjøp av SPY. <br/>
