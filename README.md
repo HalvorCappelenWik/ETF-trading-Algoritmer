@@ -1,27 +1,18 @@
-# Algorithmic-Trading
-
-Resultatet er basert på backtesting fra 2020 - 2021. 
-
-SPY strategi:<br/>
-Veldig enkel strategi. Algoritmen vil umiddelbart foreta et et kjøp av SPY. <br/>
-Deretter vil algoritmen overvåke posisjonen, <br/>
-og så fort posisjonen enten har en profit på over 10% eller et tap over 10% vil den likvidere hele posisjonen. <br/>
-Etter posisjonen er likvidert, vil bot-en vente 30 dager, før syklusen starter på nytt. <br/>
+SPY:<br/>
+Foreta et et kjøp av SPY. <br/>
+r(p) > 10% || r(p) -10% -> likvider hele posisjonen. <br/>
+Vent 30 dager -> ny syklus. <br/>
 <br/>
-VOO strategi:<br/>
-Bruker bot-en til å identifisere om VOO er i en uptrend eller downtrend. <br/>
-For å bestemme dette bruker jeg simple moving average (SMA). <br/>
-Samtidig sammenligner jeg nåværende pris med den 52-week high og 52-week low. <br/>
-Derretter tas følgende beslutning:<br/>
+
+VOO :<br/>
+simple moving average -> uptrend || downtrend <br/>
+Posisjon:<br/>
 Dersom VOO above SMA + near 52-week high = buy <br/>
 Dersom VOO below SMA + near 52-week low = sell <br/>
 Alle andre situasjoner = ingen aktiv posisjon <br/>
 <br/>
-QQQ strategi:<br/>
-kjøper QQQ. <br/>
-Oppretter en stop loss order 5% under kjøpspris <br/>
-Dersom stop loss er truffet, likviderer vi posisjonen og venter 30 dager før vi går inn i markedet igjen. 
 
+Resultatet er basert på backtesting fra 2020 - 2021. 
 
 ## VOO trade results:
 <img width="732" alt="Screenshot 2022-08-28 at 11 28 07" src="https://user-images.githubusercontent.com/91557392/187067379-599b4350-e185-4c63-8bed-aee8eff7067d.png">
