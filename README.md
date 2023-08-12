@@ -1,18 +1,17 @@
-SPY:<br/>
-Foreta et et kjøp av SPY. <br/>
-r(p) > 10% || r(p) -10% -> likvider hele posisjonen. <br/>
-Vent 30 dager -> ny syklus. <br/>
-<br/>
+### SPY:
+- Go long SPY. 
+- r(p) > 10% || r(p) -10% -> liquidate pos 
+- Wait 30 days -> new cycle
 
-VOO :<br/>
-simple moving average -> uptrend || downtrend <br/>
-Posisjon:<br/>
-Dersom VOO above SMA + near 52-week high = buy <br/>
-Dersom VOO below SMA + near 52-week low = sell <br/>
-Alle andre situasjoner = ingen aktiv posisjon <br/>
-<br/>
+### VOO:
+- simple moving average -> uptrend || downtrend 
+- Pos:
+  - VOO above SMA + near 52-week high = buy  
+  - VOO below SMA + near 52-week low = sell 
+- Else: No pos
 
-Resultatet er basert på backtesting fra 2020 - 2021. 
+
+Backtesting from 2020 - 2021. 
 
 ## VOO trade results:
 <img width="732" alt="Screenshot 2022-08-28 at 11 28 07" src="https://user-images.githubusercontent.com/91557392/187067379-599b4350-e185-4c63-8bed-aee8eff7067d.png">
